@@ -9,7 +9,6 @@ class UserDB:
     """
     _data: dict = {}
     _dbpath: str = os.path.join(os.path.dirname(__file__), 'UserData.json')
-    print(_dbpath)
 
     @classmethod
     def instantiate_data(cls) -> bool:

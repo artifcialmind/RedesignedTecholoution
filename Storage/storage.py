@@ -14,7 +14,6 @@ class ContextManager(UserDB, BookDB):
 
     _previous_context: dict  # Stores the previous book assignments (ISBN -> User ID mapping)
     _assignment_path: str = os.path.join(os.path.dirname(__file__), 'AssignmentManager.json')
-    print(_assignment_path)
 
     def __init__(self):
         """
@@ -144,21 +143,27 @@ class ContextManager(UserDB, BookDB):
         Add a new book to the database using user input.
         """
         data = self.take_book_data()
-        BookDB.add_book(data)
+        resp = BookDB.add_book(data)
+        if resp:
+            print("Added book successfully!")
 
     def delete_book_data(self) -> None:
         """
         Delete a book from the database using user input.
         """
         data = self.take_book_data()
-        BookDB.delete_book(data)
+        resp = BookDB.delete_book(data)
+        if resp:
+            print("Deleted book successfully!")
 
     def update_book_data(self) -> None:
         """
         Update book information in the database using user input.
         """
         data = self.take_book_data()
-        BookDB.update_book(data)
+        resp = BookDB.update_book(data)
+        if resp:
+            print("Updated book successfully!")
 
     @staticmethod
     def search_book():
@@ -215,21 +220,27 @@ class ContextManager(UserDB, BookDB):
         Add a new user to the database using user input.
         """
         data = self.take_user_data()
-        UserDB.add_user(data)
+        resp = UserDB.add_user(data)
+        if resp:
+            print("Added user successfully!")
 
     def delete_user_data(self) -> None:
         """
         Delete a user from the database using user input.
         """
         data = self.take_user_data()
-        UserDB.delete_user(data)
+        resp = UserDB.delete_user(data)
+        if resp:
+            print("Deleted user successfully!")
 
     def update_user_data(self) -> None:
         """
         Update user password in the database using user input.
         """
         data = self.take_user_data()
-        UserDB.update_password(data)
+        resp = UserDB.update_password(data)
+        if resp:
+            print("Updated user successfully!")
 
     def track_availability(self) -> bool:
         """

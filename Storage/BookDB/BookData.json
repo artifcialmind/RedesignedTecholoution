@@ -1,17 +1,7 @@
 {
     "123": {
-        "title": "shiwans the great",
-        "author": "shiwans",
+        "title": "Freedom",
+        "author": "shiwans Trivedi",
         "isbn": "123"
-    },
-    "me": {
-        "title": "me",
-        "author": "me3",
-        "isbn": "me"
-    },
-    "178": {
-        "title": "me4",
-        "author": "me4",
-        "isbn": "178"
     }
 }
