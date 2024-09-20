@@ -4,8 +4,8 @@ This repo consists of redesigned code for Library management system which uses p
 
 ## Features
 
-- **User Management**: Add, verify, update, and delete users easily.
-- **Book Management**: Manage books by adding, verifying, updating, and deleting book records.
+- **User Management**: Add, verify, update, search, list and delete users easily.
+- **Book Management**: Manage books by adding, verifying, updating, searching, listing, and deleting book records.
 - **Data Persistence**: User and book data are stored in JSON files, ensuring data is preserved between sessions.
 - **Error Handling**: Robust error handling for file operations and JSON decoding.
 
@@ -40,7 +40,7 @@ project-directory/
 |   └── BookDB  # User database management
 |   |    └── book_storage_handling.py  #  class handling book db
 |   |    └── BookData.json     # json storing book data
-|   └── UserDB
+|   └── UserDB/
 |   |     └── user_storage_handling.py    # class handling user db
 |   |    └── UserData.json      # json storing user data
 |   ├── AssignmentManager.json       # json storing book-assignment data
@@ -48,6 +48,15 @@ project-directory/
 |
 └── main.py              # Main entry point for the application
 ```
+### The picture above describes the file structure and architecture. The choice has been made on following parameters:
+1) Modularity: The storage has been explicitly set to User and Book including the json and corresponding codes which helps in increasing the modularity and decreasing effort of debugging.
+2) Pydantic model usage: Under the Pydantic_Models we can pydantic_models.py that serves as a common classes that has been used by various other classes. This ensures data integrity throughout the pipeline.
+3) Storage.py: This is under the directory Storage and provides multiple inheritence from UserDB and BookDB and serves as a common way point to serve all the storage needs.
+4) JSON storage: For easy visualisation and fast retrival times when converted into dictionary, reducing searching times.
+5) Menu: Under the Menu directory more functionalities can be added over time. At the moment it consists of a single class serving the menu navigation needs.
+
+Overall this architecture has been made by thought of modularity, efficiency, durablity and scalablity in mind.
+
 
 ## Testing and Validation
 ### 1) BookDB Features:
