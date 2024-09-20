@@ -65,7 +65,7 @@ project-directory/
    
 ![image](https://github.com/user-attachments/assets/d699eaa2-9fdb-4379-839f-1b875cb4bb0e)
 
-3)Check in and out testing:
+3) Check in and out testing:
 
 ![image](https://github.com/user-attachments/assets/482e9ed2-df5c-4101-804f-66ebfdad6c78)
 
