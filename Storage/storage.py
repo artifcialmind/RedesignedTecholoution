@@ -1,4 +1,5 @@
 import json
+import os
 from Storage.UserDB.user_storage_handling import UserDB
 from Storage.BookDB.book_storage_handling import BookDB
 from Pydantic_Models.pydantic_models import Assignment, BookData, UserLoggingData
@@ -12,7 +13,8 @@ class ContextManager(UserDB, BookDB):
     """
 
     _previous_context: dict  # Stores the previous book assignments (ISBN -> User ID mapping)
-    _assignment_path: str = r"C:\Users\91797\OneDrive\Desktop\Redesigned\Storage\AssignmentManager.json"
+    _assignment_path: str = os.path.join(os.path.dirname(__file__), 'AssignmentManager.json')
+    print(_assignment_path)
 
     def __init__(self):
         """

@@ -1,4 +1,5 @@
 import json
+import os
 from Pydantic_Models.pydantic_models import UserLoggingData
 
 
@@ -7,7 +8,8 @@ class UserDB:
     A class that manages user data, providing methods for CRUD operations and verification.
     """
     _data: dict = {}
-    _dbpath: str = r"C:\Users\91797\OneDrive\Desktop\Redesigned\Storage\UserDB\UserData.json"
+    _dbpath: str = os.path.join(os.path.dirname(__file__), 'UserData.json')
+    print(_dbpath)
 
     @classmethod
     def instantiate_data(cls) -> bool:
