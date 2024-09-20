@@ -50,7 +50,7 @@ project-directory/
 ```
 
 ## Testing and Validation
-1) BookDB Features:
+### 1) BookDB Features:
 
 ![image](https://github.com/user-attachments/assets/21ef3053-5119-4853-b389-41d32165a72a)
 
@@ -58,14 +58,14 @@ project-directory/
 
 ![image](https://github.com/user-attachments/assets/d0bb1111-9ca7-4782-b9da-e8b757e39596)
 
-2) UserDB Features:
+### 2) UserDB Features:
 
 ![image](https://github.com/user-attachments/assets/3e4dbcfc-da85-4dbb-b020-c06ecd53f187)
 
    
 ![image](https://github.com/user-attachments/assets/d699eaa2-9fdb-4379-839f-1b875cb4bb0e)
 
-3) Check in and out testing:
+### 3) Check in and out testing:
 
 ![image](https://github.com/user-attachments/assets/482e9ed2-df5c-4101-804f-66ebfdad6c78)
 
@@ -75,7 +75,7 @@ project-directory/
 
 ![image](https://github.com/user-attachments/assets/4b1dad65-267a-4321-82fb-0ff320e2562f)
 
-4) Persistant Storage testing:
+### 4) Persistant Storage testing:
 
 UserDB:
 
