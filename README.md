@@ -34,7 +34,7 @@ project-directory/
 │   └── menu.py          # Menu handling for user interactions
 │
 ├── Pydantic_Models/
-│   └── pydantic_models.py  # Pydantic models for User and Book data
+│   └── pydantic_models.py  # Pydantic models for User, Book and Assignment data
 │
 ├── Storage/
 |   └── BookDB  # User database management
@@ -47,4 +47,52 @@ project-directory/
 |   └── storage.py             # class handling combination of both UserDB and BookDB as inheritence
 |
 └── main.py              # Main entry point for the application
+```
+
+## Testing and Validation
+1) BookDB Features:
+
+![image](https://github.com/user-attachments/assets/21ef3053-5119-4853-b389-41d32165a72a)
+
+![image](https://github.com/user-attachments/assets/9171b9c9-8c4b-4fda-baf8-0fdf0e62139c)
+
+![image](https://github.com/user-attachments/assets/d0bb1111-9ca7-4782-b9da-e8b757e39596)
+
+2) UserDB Features:
+
+![image](https://github.com/user-attachments/assets/3e4dbcfc-da85-4dbb-b020-c06ecd53f187)
+
+   
+![image](https://github.com/user-attachments/assets/d699eaa2-9fdb-4379-839f-1b875cb4bb0e)
+
+3)Check in and out testing:
+
+![image](https://github.com/user-attachments/assets/482e9ed2-df5c-4101-804f-66ebfdad6c78)
+
+![image](https://github.com/user-attachments/assets/6b9ece7f-7d9b-4e1a-ba52-a29a7c5794cc)
+
+![image](https://github.com/user-attachments/assets/e31420b0-597f-4ac1-9b86-ae415800868b)
+
+![image](https://github.com/user-attachments/assets/4b1dad65-267a-4321-82fb-0ff320e2562f)
+
+4) Persistant Storage testing:
+
+UserDB:
+
+![image](https://github.com/user-attachments/assets/c3d521f8-bedd-4a23-aa24-953cb3b45c4e)
+
+BookDB:
+
+![image](https://github.com/user-attachments/assets/9b28b908-ccf8-4a13-8fd0-ca0555d8ac06)
+
+
+
+
+
+
+
+
+
+
+
 
